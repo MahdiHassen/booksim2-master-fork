@@ -224,6 +224,10 @@ int BitCompTrafficPattern::dest(int source)
 {
   assert((source >= 0) && (source < _nodes));
   int const mask = _nodes - 1;
+
+  
+
+
   return ~source & mask;
 }
 

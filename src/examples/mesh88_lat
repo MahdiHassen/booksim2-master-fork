@@ -27,6 +27,9 @@
 //8X8 mesh with 20 flits per packet under injection mode
 //injection rate here is packet per cycle, NOT flit per cycle
 
+stats_out = results2000.txt ; 
+
+
 // Topology
 
 topology = mesh;
