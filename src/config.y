@@ -1,7 +1,11 @@
 %{
 
 int  yylex(void);
+<<<<<<< HEAD
 void yyerror(char * msg);
+=======
+void yyerror(const char * msg);
+>>>>>>> 638aa17 (added templates, fixed titles)
 void config_assign_string( char const * field, char const * value );
 void config_assign_int( char const * field, int value );
 void config_assign_float( char const * field, double value );

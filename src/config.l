@@ -9,8 +9,8 @@
 
 static unsigned int lineno = 1;
 
-void config_error(char * msg, int lineno);
-void yyerror(char * msg);
+void config_error(const char * msg, int lineno);
+void yyerror(const char * msg);
 
 extern int config_input(char *, int);
 #undef YY_INPUT
@@ -48,7 +48,7 @@ StrConst [A-Za-z_\-/\.][A-Za-z0-9_\-/\.\+(\{\,)\}]*
 
 %%
 
-void yyerror( char * msg )
+void yyerror( const char * msg )
 {
   config_error( msg, lineno );
 }
